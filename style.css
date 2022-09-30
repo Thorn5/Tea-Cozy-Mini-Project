@@ -11,7 +11,6 @@ a {
 }
 .navContainer {
     display: grid;
-    flex-wrap: wrap;
     grid-template-columns: 200px auto 350px;
     position: fixed;
     background-color: rgba(0, 0, 0, .9);
@@ -49,13 +48,21 @@ header img {
     }
   }
 
-/* .mainSection {
+.mainContainer {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto 1200px auto ;
     padding-top: 69px;
-    background-color: red;
+    /* width: 1200px; */
+    margin: auto;
+    opacity: 0.9;
 }
-.missionSection {
+#mission {
+grid-column-start: 2;
+background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+height: 700px;
+/* width 1200px; */
+}
+/* .missionSection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
