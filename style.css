@@ -1,0 +1,42 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+}
+.navBar {
+    display: grid;
+    grid-template-columns: 200px auto 350px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .9);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 69px;
+    padding: 0 10px;
+    border-bottom-style: solid;
+    border-bottom-color: seashell;
+    border-bottom-width: 1px;
+}
+.logo {
+    display: flex;
+    grid-column-start: 1;
+    text-align: left;
+    align-self: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    justify-content: space-between;
+    text-align: right;
+    align-self: center;
+    color: seashell;
+}
+nav a {
+    color: seashell;
+    text-decoration: underline;
+}
