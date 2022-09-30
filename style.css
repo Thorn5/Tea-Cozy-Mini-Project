@@ -1,9 +1,8 @@
-/* test test test */
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 22px;
     color: seashell;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: black;
     text-align: center;
 }
 .navBar {
@@ -25,8 +24,9 @@ body {
     grid-column-start: 1;
     text-align: left;
     align-self: center;
+    height: 50px;
 }
-nav {
+.menuItems {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,7 +37,14 @@ nav {
     align-self: center;
     color: seashell;
 }
-nav a {
+.menuItems a {
     color: seashell;
     text-decoration: underline;
 }
+@media screen and (max-width: 700px) {
+    .menuItems {
+      flex-direction: column;
+      text-align: left;
+      font-size: 20px; /* resize text to fit in header */
+    }
+  }
