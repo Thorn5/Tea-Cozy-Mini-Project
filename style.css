@@ -5,8 +5,13 @@ body {
     background-color: black;
     text-align: center;
 }
-.navBar {
+a {
+    color: seashell;
+    text-decoration: underline;
+}
+.navContainer {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 200px auto 350px;
     position: fixed;
     background-color: rgba(0, 0, 0, .9);
@@ -19,14 +24,13 @@ body {
     border-bottom-color: seashell;
     border-bottom-width: 1px;
 }
-.logo {
+header img {
     display: flex;
     grid-column-start: 1;
-    text-align: left;
     align-self: center;
     height: 50px;
 }
-.menuItems {
+.navBar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,14 +41,33 @@ body {
     align-self: center;
     color: seashell;
 }
-.menuItems a {
-    color: seashell;
-    text-decoration: underline;
-}
-@media screen and (max-width: 700px) {
-    .menuItems {
+@media screen and (max-width: 600px) {
+    .navBar {
       flex-direction: column;
       text-align: left;
-      font-size: 20px; /* resize text to fit in header */
+      font-size: 18px; /* resize text to fit in header */
     }
   }
+
+/* .mainSection {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    padding-top: 69px;
+    background-color: red;
+}
+.missionSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-start: 1;
+    align-content: center;
+}
+.missionImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-start: 2;
+    grid grid-column-end: 3;
+    width: 1200px;
+    height: 700px;
+} */
