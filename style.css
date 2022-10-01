@@ -50,18 +50,25 @@ header img {
 
 .mainContainer {
     display: grid;
-    grid-template-columns: auto 1200px auto ;
     padding-top: 69px;
-    /* width: 1200px; */
-    margin: auto;
+    grid-template-columns: 100px 10px 165px 125px 10px 40px 125px 50px 125px 40px 10px 125px 165px 10px 100px;
+    grid-template-rows: 233px 234px 233px;
+    align-items: center;
+    justify-content: center;
     opacity: 0.9;
 }
 #mission {
-grid-column-start: 2;
-background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
-height: 700px;
-/* width 1200px; */
+    display: flex;
+    grid-column-start: 2;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    height: 700px;
 }
+#missionText {
+    display: flexbox;
+    flex-flow: row wrap;
+    justify-content: center;   
+    background-color: black;
+} 
 /* .missionSection {
     display: flex;
     flex-direction: row;
