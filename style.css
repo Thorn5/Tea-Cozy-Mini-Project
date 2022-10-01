@@ -23,65 +23,56 @@ a {
     border-bottom-color: seashell;
     border-bottom-width: 1px;
 }
-header img {
+.navContainerItem {
     display: flex;
-    grid-column-start: 1;
+    flex-flow: row wrap;
     align-self: center;
+    justify-content: space-between;
+}
+header img {
+    grid-column-start: 1;
     height: 50px;
 }
-.navBar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#navBar {
     grid-column-start: 3;
     grid-column-end: -1;
-    justify-content: space-between;
     text-align: right;
-    align-self: center;
-    color: seashell;
 }
 @media screen and (max-width: 600px) {
-    .navBar {
+    #navBar {
       flex-direction: column;
       text-align: left;
       font-size: 18px; /* resize text to fit in header */
     }
-  }
-
+}
 .mainContainer {
     display: grid;
     padding-top: 69px;
     grid-template-columns: 100px 10px 165px 125px 10px 40px 125px 50px 125px 40px 10px 125px 165px 10px 100px;
-    grid-template-rows: 233px 234px 233px;
+    grid-template-rows: 350px 350px 2000px;
     align-items: center;
     justify-content: center;
     opacity: 0.9;
 }
-#mission {
+.mainContainerItem {
     display: flex;
-    grid-column-start: 2;
+    flex-flow: row wrap;
+    align-self: center;
+}
+#missionBackgroundImage {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
     height: 700px;
+    align-self: flex-start;
 }
-#missionText {
-    display: flexbox;
-    flex-flow: row wrap;
-    justify-content: center;   
-    background-color: black;
-} 
-/* .missionSection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#mission {
     grid-column-start: 1;
-    align-content: center;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-content: center;
+    justify-self: stretch;
+    background-color: black;
 }
-.missionImage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-column-start: 2;
-    grid grid-column-end: 3;
-    width: 1200px;
-    height: 700px;
-} */
